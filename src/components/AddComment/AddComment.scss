@@ -1,0 +1,13 @@
+.add-comment {
+    img {
+        position: absolute;
+        bottom: 16px;
+        width: 27px;
+        @media (min-width: 567px) {
+            & {
+                position: relative;
+                top: 0;
+            }
+        }
+    }
+}

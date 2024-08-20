@@ -1,0 +1,12 @@
+#root {
+  position: relative;
+  margin: 0 auto;
+  padding: 25px 10px;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  #root {
+    max-width: 1280px;
+    padding: 45px 0;
+  }
+}

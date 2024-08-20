@@ -1,0 +1,11 @@
+.activities > div {
+    position: absolute;
+    bottom: 23px;
+    @media (min-width: 576px) {
+        & {
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.comments > .comment > .replies {
+    position: relative;
+    margin: 10px;
+    margin-right: 0;
+    &::before {
+        content: "";
+        position: absolute;
+        left: -10px;
+        background-color: var(--lightGray);
+        width: 1px;
+        height: calc(100% - 10px);
+    }
+    @media (min-width: 576px) {
+        & {
+            --replyMargin: 52px;
+            margin-left: var(--replyMargin);
+            max-width: calc(var(--commentMaxWidth) - var(--replyMargin));
+            &::before {
+                left: calc(-1 * (var(--replyMargin) / 2));
+                height: calc(100% - 20px);
+            }
+        }
+    }
+}

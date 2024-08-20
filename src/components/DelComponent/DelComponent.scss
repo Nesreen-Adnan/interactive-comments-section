@@ -1,0 +1,67 @@
+.del {
+    right: 62px;
+    color: var(--softRed);
+}
+.editable .del {
+    right: calc(var(--btnWidth) + 80px);
+}
+.del-comment {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: change-bg .4s linear forwards;
+    .container {
+        max-width: 280px;
+        display: block;
+        position: relative;
+        left: 50%;
+        top: 50%;
+        background-color: var(--white);
+        padding: 20px;
+        font-size: 11px;
+        border-radius: var(--radius);
+        transform: translate(-120vw, -50%);
+        animation: enter .5s .5s linear forwards;
+        .title {
+            font-weight: var(--lightBold);
+            font-size: 14px;
+            color: var(--darkBlue);
+        }
+        .text {
+            margin: 10px 0;
+            color: var(--grayishBlue);
+        }
+        button {
+            width: calc(50% - 5px);
+            padding: 10px;
+            font-size: inherit;
+            font-weight: var(--lightBold);
+            text-transform: uppercase;
+            border-radius: var(--radius);
+            border: none;
+            color: var(--white);
+            transition: .3s;
+            cursor: pointer;
+            &:first-of-type {
+                margin-right: 10px;
+                background-color: var(--grayishBlue);
+            }
+            &:last-of-type {
+                background-color: var(--softRed);
+            }
+        }        
+    }
+}
+@keyframes change-bg {
+    0% {
+        opacity: 0;
+    }
+}
+@keyframes enter {
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}

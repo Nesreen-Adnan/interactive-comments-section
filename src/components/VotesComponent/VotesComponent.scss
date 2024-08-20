@@ -1,0 +1,23 @@
+.votes {
+    position: absolute;
+    bottom: 15px;
+    gap: 15px;
+    background-color: var(--veryLightGray);
+    padding: 9px;
+    min-width: 25px;
+    margin-right: 7px;
+    @media (min-width: 567px) {
+        & {
+            position: relative;
+            top: 0;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    img {
+        width: 7px;
+    }
+    .score {
+        color: var(--moderateBlue)
+    }
+}
