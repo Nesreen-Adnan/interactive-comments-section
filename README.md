@@ -33,7 +33,7 @@ timestamps and dynamically track the time since the comment or reply was posted.
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
