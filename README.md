@@ -38,7 +38,7 @@ timestamps and dynamically track the time since the comment or reply was posted.
 ### Links
 
 - Solution URL: 
-(https://github.com/Nesreen-Adnan/interactive-comments-section)
+(https://www.frontendmentor.io/solutions/responsive-interactive-comments-section-using-react-wuNA3upOQv)
 - Live Site URL: 
 (https://interactive-comments-challenge24.netlify.app/)
 
